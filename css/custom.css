@@ -1,0 +1,13 @@
+.box__catalog-title_custom {
+	/* relevant styles */
+	
+	padding: .125em;
+	background: #fbb800 content-box;
+	
+	/* other styles */
+	margin: 0 auto;
+	width: 60%; height: 2em;
+	color: white;
+	font: 700 2em/2 comic sans ms, verdana, sans serif;
+	text-align: center;
+}
