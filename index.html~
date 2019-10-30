@@ -222,7 +222,7 @@
 		<div class="row">
 			<div class="col-md-4 col-sm-4">
 				<div class="box__catalog-offmebel box__catalog-hover">
-					<div class="box__catalog-title box__catalog-title-krovati" style="color: #000; top: 83%;">световые лайтбоксы</div>
+					<div class="box__catalog-title_custom"><div class="box__catalog-title-border">световые лайтбоксы</div></div>
 					<div class="mask">
 					<a class="box__catalog-btn"
 					data-form="Заказать дизайн проект: Офисная мебель" 
@@ -232,7 +232,7 @@
 			</div>
 			<div class="col-md-4 col-sm-4">
 				<div class="box__catalog-krovati box__catalog-hover">
-					<div class="box__catalog-title box__catalog-title-krovati">Фигурный лайтбокс</div>
+					<div class="box__catalog-title_custom"><div class="box__catalog-title-border">Фигурный лайтбокс</div></div>
 					<div class="mask">
 					<a class="box__catalog-btn"
 					data-form="Заказать дизайн проект: Кровати" 
@@ -243,7 +243,7 @@
 			</div>
 			<div class="col-md-4 col-sm-4">
 				<div class="box__catalog-detmebel box__catalog-hover">
-					<div class="box__catalog-title box__catalog-title-krovati" style="color: #000;">вывескы композитные</div>
+					<div class="box__catalog-title_custom"><div class="box__catalog-title-border">вывескы композитные</div></div>
 					<div class="mask">
 					<a class="box__catalog-btn"
 					data-form="Заказать дизайн проект: Десткая мебель" 
@@ -257,7 +257,9 @@
 <div class="row">
 			<div class="col-md-4 col-sm-4">
 				<div class="box__catalog-krovati box__catalog-hover" style="background-image: url(img/catalog/bukvy2.jpg);">
-					<div class="box__catalog-title box__catalog-title-krovati">буквы с внутренней подсветкой</div>
+					<div class="box__catalog-title_custom"><div class="box__catalog-title-border">буквы с внутренней</div></div><br>
+					<div class="box__catalog-title_custom-9"><div class="box__catalog-title-border">подсветкой</div></div>
+				<!--	<div class="box__catalog-title box__catalog-title-krovati">буквы с внутренней подсветкой</div>    -->
 					<div class="mask">
 					<a class="box__catalog-btn"
 					data-form="Заказать дизайн проект: Кровати" 
@@ -268,7 +270,7 @@
 			</div>
 <div class="col-md-4 col-sm-4">
 				<div class="box__catalog-detmebel box__catalog-hover" style="background-image: url(img/catalog/bukvy4.jpg);">
-					<div class="box__catalog-title box__catalog-title-krovati" style="color: #FFF;">обьемные буквы из ПВХ</div>
+					<div class="box__catalog-title_custom"><div class="box__catalog-title-border">обьемные буквы из ПВХ</div></div>
 					<div class="mask">
 					<a class="box__catalog-btn"
 					data-form="Заказать дизайн проект: Десткая мебель" 
@@ -280,7 +282,7 @@
 			</div>
 			<div class="col-md-4 col-sm-4">
 				<div class="box__catalog-krovati box__catalog-hover" style="background-image: url(img/catalog/bukvy3.jpg);">
-					<div class="box__catalog-title box__catalog-title-krovati" style="color: #000;">металлические обьемные буквы</div>
+					<div class="box__catalog-title_custom"><div class="box__catalog-title-border">металлические обьемные буквы</div></div>
 					<div class="mask">
 					<a class="box__catalog-btn"
 					data-form="Заказать дизайн проект: Кровати" 
