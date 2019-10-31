@@ -28,17 +28,17 @@ if(isset($_POST['phone'])) {
 	
 	include 'settings.php';
 	
-	function died($error) {
-		echo "Sorry, but there were error(s) found with the form you submitted. ";
-		echo "These errors appear below.<br /><br />";
-		echo $error."<br /><br />";
-		echo "Please go back and fix these errors.<br /><br />";
-		die();
-	}
+//	function died($error) {
+//		echo "Sorry, but there were error(s) found with the form you submitted. ";
+//		echo "These errors appear below.<br /><br />";
+//		echo $error."<br /><br />";
+//		echo "Please go back and fix these errors.<br /><br />";
+//		die();
+//	}
 	
 	if(!isset($_POST['name']) ||
 //		!isset($_POST['Email_Address']) ||
-		!isset($_POST['phone']) ||
+		!isset($_POST['phone'])
 //		!isset($_POST['Your_Message']) || 
 //		!isset($_POST['AntiSpam'])		
 		) {
@@ -46,7 +46,7 @@ if(isset($_POST['phone'])) {
 	}
 	
 	$full_name = $_POST['name']; // required
-//	$email_from = $_POST['Email_Address']; // required
+	$email_from = "info@kupuy.top"; // required
 	$telephone = $_POST['phone']; // not required
 //	$comments = $_POST['Your_Message']; // required
 //	$antispam = $_POST['AntiSpam']; // required
@@ -71,7 +71,7 @@ if(isset($_POST['phone'])) {
   if(strlen($error_message) > 0) {
   	died($error_message);
   }
-	$email_message = "Добрый день. Меня зовут" . $full_name . ", перезвоните мне" . $telephone . " \r\n";
+	$email_message = "Добрый день. Меня зовут " . $full_name . ", перезвоните мне " . $telephone . " \r\n";
 	
 	function clean_string($string) {
 	  $bad = array("content-type","bcc:","to:","cc:");
@@ -80,8 +80,8 @@ if(isset($_POST['phone'])) {
 	
 	$email_message .= "Full Name: ".clean_string($full_name)."\r\n";
 	$email_message .= "Email: ".clean_string($email_from)."\r\n";
-	$email_message .= "Telephone: ".clean_string($telephone)."\r\n";
-	$email_message .= "Message: ".clean_string($comments)."\r\n\r\n".base64_decode($base)."\r\n";
+	$email_message .= "Telephone: ".clean_string($telephone)."\r\n".base64_decode($base)."\r\n";
+//	$email_message .= "Message: ".clean_string($comments)."\r\n\r\n".base64_decode($base)."\r\n";
 	
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
