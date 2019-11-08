@@ -23,8 +23,8 @@ try {
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
     $mail->Username   = 'sale@kraski.ooo';                     // SMTP username
     $mail->Password   = '42LLvWQbXH';                               // SMTP password
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
-    $mail->Port       = 587;                                    // TCP port to connect to
+//    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
+    $mail->Port       = 25;                                    // TCP port to connect to
 
     //Recipients
     $mail->setFrom('sale@kraski.ooo', 'Mailer');
