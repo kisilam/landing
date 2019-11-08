@@ -8,8 +8,10 @@ use PHPMailer\PHPMailer\Exception;
 // Load Composer's autoloader
 require 'vendor/autoload.php';
 
-$full_name = $_POST['name'];
-$telephone = $_POST['phone']; 
+$full_name = 'dfgdfgdfgdfgdfgdfg'
+//$_POST['name'];
+$telephone = '5345345345345'
+//$_POST['phone']; 
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
 
