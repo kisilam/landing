@@ -8,10 +8,8 @@ use PHPMailer\PHPMailer\Exception;
 // Load Composer's autoloader
 require 'vendor/autoload.php';
 
-$full_name = 'dfgdfgdfgdfgdfgdfg';
-//$_POST['name'];
-$telephone = '5345345345345';
-//$_POST['phone']; 
+$full_name = $_POST['name'];
+$telephone = $_POST['phone']; 
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
 
@@ -24,7 +22,10 @@ try {
     $mail->Username   = 'sale@kraski.ooo';                     // SMTP username
     $mail->Password   = '42LLvWQbXH';                               // SMTP password
 //    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
-    $mail->Port       = 25;                                    // TCP port to connect to
+    $mail->Port       = 25;
+
+
+    $mail->CharSet = 'UTF-8';                                    // TCP port to connect to
 
     //Recipients
     $mail->setFrom('sale@kraski.ooo', 'Mailer');
@@ -41,8 +42,8 @@ try {
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'Запрос обратного звонка на сайте kiev.kraski.ooo';
-    $mail->Body    = 'Добрый день. Меня зовут ' . $full_name . ', перезвоните мне на номер' . $telephone;
-    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+    $mail->Body    = 'Добрый день. Меня зовут ' . $full_name . ', перезвоните мне на номер' . $telephone . 'для уточнение подробностей';
+    $mail->AltBody = 'Добрый день. Меня зовут ' . $full_name . ', перезвоните мне на номер' . $telephone . 'для уточнение подробностей';
 
     $mail->send();
     echo 'Message has been sent';
