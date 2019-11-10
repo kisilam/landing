@@ -8,8 +8,8 @@ use PHPMailer\PHPMailer\Exception;
 // Load Composer's autoloader
 require 'vendor/autoload.php';
 
-$full_name = $_POST['name'];
-$telephone = $_POST['phone']; 
+$full_name = $_GET['name'];
+$telephone = $_GET['phone']; 
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
 
@@ -42,8 +42,8 @@ try {
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'Запрос обратного звонка на сайте kiev.kraski.ooo';
-    $mail->Body    = 'Добрый день. Меня зовут ' . $full_name . ', перезвоните мне на номер' . $telephone . 'для уточнение подробностей';
-    $mail->AltBody = 'Добрый день. Меня зовут ' . $full_name . ', перезвоните мне на номер' . $telephone . 'для уточнение подробностей';
+    $mail->Body    = 'Добрый день. Меня зовут <b>' . $full_name . '</b>, перезвоните мне на номер <b>' . $telephone . '</b> для уточнение подробностей';
+    $mail->AltBody = 'Добрый день. Меня зовут ' . $full_name . ', перезвоните мне на номер ' . $telephone . ' для уточнение подробностей';
 
     $mail->send();
     echo 'Message has been sent';
