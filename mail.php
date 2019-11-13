@@ -6,7 +6,7 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 define('MY_APP', true);
-require_once('config/config.php');
+include 'config/config.php';
 
 // Load Composer's autoloader
 require 'vendor/autoload.php';
@@ -20,7 +20,9 @@ try {
     //Server settings
     $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
     $mail->isSMTP();                                            // Send using SMTP
-    $mail->Host       = 'mail1.kupuy.top';                    // Set the SMTP server to send through
+    $mail->Host       = 'mail1.kupuy.top'; 
+    $mail->Username   = $mailUsername;                     // SMTP username
+    $mail->Password   = $mailPassword;                     // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
                                  // SMTP password
 //    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted

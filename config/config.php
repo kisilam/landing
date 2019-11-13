@@ -3,8 +3,8 @@ if (!defined('MY_APP')) {
 	die("Hacking attempt!");
 }
 
-$mail->Username   = 'sale@kraski.ooo';                     // SMTP username
-$mail->Password   = 'hAo3sdoETf';  
+$mailUsername = 'sale@kraski.ooo';                     // SMTP username
+$mailPassword = 'hAo3sdoETf';  
 
 
 ?>
