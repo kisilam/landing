@@ -32,7 +32,7 @@ try {
     $mail->CharSet = 'UTF-8';                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('sale@kraski.ooo', 'Mailer');
+    $mail->setFrom('sale@kraski.ooo', 'Kraski.ooo');
     $mail->addAddress('info@kraski.ooo', 'Продажы Краски');     // Add a recipient
 //    $mail->addAddress('ellen@example.com');               // Name is optional
     $mail->addReplyTo('sale@kraski.ooo', 'Information');
