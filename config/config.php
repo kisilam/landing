@@ -4,7 +4,7 @@ if (!defined('MY_APP')) {
 }
 
 $mailUsername = 'sale@kraski.ooo';                     // SMTP username
-$mailPassword = 'hAo3sdoETf';  
+$mailPassword = '';  
 
 
 ?>
